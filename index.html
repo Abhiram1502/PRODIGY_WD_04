@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="progress-bar"></div>
+    <div id="top-btn" onclick="toTop()"><i class="fa-solid fa-arrow-up"></i></div>
+    <nav>
+        <div class="logo"> 
+            <img class="logo-img" src="images/logo1.png" alt="">
+            <h3 class="logo-para">bhi<span class="dot">.</span></h3>
+        </div>
+        <div class="links">
+            <ul id="links">
+                <i onclick="hideMenu()" id="cross" class="fa-solid fa-x"></i>
+                <li class="link active"><a href="#hero-section">Home</a></li>
+                <li class="link"><a href="#about-section">About</a></li>
+                <li class="link"><a href="#service-section">Skills</a></li>
+                <li class="link"><a href="#work-section">Projects</a></li>
+                <li class="link"><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+        <i onclick="showMenu()" id="bars" class="fa-solid fa-bars"></i>
+    </nav>
+    <section id="hero-section" class="hero-section">
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-head">Hey I'm <span class="name">Abhiram</span></h2>
+                <h3 class="hero-shead">I'm a <span class="name">Developer</span></h3>
+                <p class="hero-para">I'm an ethusiastic Bhachelor's degree candidate in Computer Science <br>and Engineering from Vellore Institute of Technlogy Amaravati , Andhra Pradesh.<br>I'm a passionate web developer creating modern, user-friendly websites.</p>
+                <div class="hero-contact">
+                    <a href="www.linkedin.com/in/abhiram-pinnaka-" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Abhiram1502" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_abhiram_chowdary_15?igsh=MWZoOWhrYWYyMjk3cQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072073112135&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/Abhiram0615?t=aqT2PIu80ch2M-L5l9_jFA&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img class="image-hero" src="images/image (5).png" alt="Hero-image">
+                <div class="dsn"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about-section" class="about-section">
+        <div class="about">
+            <h3 class="about-head1">About Me</h3>
+            <div class="about-img">
+                <img src="images/about.png" alt="about-image">
+            </div>
+            <div class="about-content">
+                <h3 class="about-head">About Me</h3>
+                <p class="about-para">Passionate web developer dedicated to creating innovative, visually <br>appealing websites while blending creativity and functionality for seamless user experiences.</p>
+                <ul class="about-details">
+                    <li id="Skill" onclick="showSkills()">Skills</li>
+                    <li id="Experience" onclick="showExp()">Experience</li>
+                    <li id="Education" onclick="showEdu()">Education</li>
+                </ul>
+                <div class="details-content">
+                    <div class="skills" id="skills">
+                        <p class="details-head">UI/UX</p>
+                        <p class="details-para">Designing Website Interface</p>
+                        <p class="details-head">Web Development</p>
+                        <p class="details-para">Web App Development</p>
+                        <p class="details-head">Database Managment</p>
+                        <p class="details-para">MySQl , Oracle</p>
+                    </div>
+                    <div class="exp" id="exp">
+                        <p class="details-head">2024 - Current</p>
+                        <p class="details-para">Web Developer Intern at Codsoft</p>
+                        <p class="details-head">2023 - 2024</p>
+                        <p class="details-para">Project Lead at Edu-Guide</p>
+                        <p class="details-head">2023 - 2024</p>
+                        <p class="details-para">Frontend Developer for WheelsAway Car rentals Website</p>
+                    </div>
+                    <div class="edu" id="edu">
+                        <p class="details-head">2023 - Current</p>
+                        <p class="details-para">Btech-CSE at VITAP-University</p>
+                        <p class="details-head">2021 - 2023</p>
+                        <p class="details-para">Intermediate at Bhashyam Junior College</p>
+                        <p class="details-head">2020 - 2021</p>
+                        <p class="details-para">SSC at Dreamz High School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service-section" id="service-section">
+        <div class="service">
+            <h3 class="service-head">My Services</h3>
+            <div class="service-content">
+                <div class="service1">
+                    <i class="fa-solid fa-code"></i>
+                    <h4 class="svhead">Web development</h4>
+                    <p class="spara">Developing responsive and dynamic websites using HTML, CSS, JavaScript, and frameworks.</p>
+                </div>
+                <div class="service1">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h4 class="svhead">UI/UX Design</h4>
+                    <p class="spara">Crafting intuitive and visually appealing interfaces to enhance user experiences.</p>
+                </div>
+                <div class="service1">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h4 class="svhead">Mobile Optimization</h4>
+                    <p class="spara">Ensuring your website looks great and functions perfectly on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-section" id="work-section">
+        <div class="work">
+            <h3 class="work-head">My Work</h3>
+            <p class="work-para">A showcase of my journey in web development and the projects I've built along the way. From dynamic websites to interactive applications, each project reflects my passion for creating functional and engaging web experiences.</p>
+            <div class="work-content">
+                <div class="work1">
+                    <div class="work-details">
+                        <h6 class="whead">Car Rentals Website</h6>
+                        <p class="wpara">Developed a responsive car rental website with features like a booking system, amenities display, and user authentication.</p>
+                        <a href="https://abhiram1502.github.io/Car-Rentals/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work2">
+                    <div class="work-details">
+                        <h4 class="whead">Travel Website UI/UX Design</h4>
+                        <p class="wpara">Created an intuitive travel website interface emphasizing seamless navigation and vibrant visuals for enhanced user experience.</p>
+                        <a href="javascript:void(0)" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work3">
+                    <div class="work-details">
+                        <h4 class="whead">Edu-Guide Website</h4>
+                        <p class="wpara">Developed an educational website featuring course listings, skilled instructors, and an engaging user interface.</p>                        
+                        <a href="https://abhiram1502.github.io/EduGuide/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="work-button">See More</button>
+        </div>
+    </section>
+    <section id="contact-section" class="contact-section">
+        <div class="contact">
+            <div class="contact-left">
+                <h3 class="contact-head">Contact Me</h3>
+                <div class="mail">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>abhichowdary1502@gmail.com</p>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>+91 7396635910</p>
+                </div>
+                <div class="hero-contact">
+                    <a href="www.linkedin.com/in/abhiram-pinnaka-" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Abhiram1502" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_abhiram_chowdary_15?igsh=MWZoOWhrYWYyMjk3cQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072073112135&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/Abhiram0615?t=aqT2PIu80ch2M-L5l9_jFA&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <button class="contact-button">Download Resume</button>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a65d0036-4840-46be-b59c-cb05d782238d">
+                    <input id="fname" class="name" name="name" type="text" placeholder="Your Name" required>
+                    <input class="mail" name="mail" type="mail" placeholder="Your Email" required>
+                    <textarea name="message" class="message" rows="7" placeholder="Message"></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" id="subject" name="subject" value="Someone sent a mail from Portifolio">
+                    <button id="submit" type="submit" class="contact-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <hr class="line">
+        <p>© Abhiram Portifolio, All Right Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
